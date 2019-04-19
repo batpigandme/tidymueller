@@ -34,6 +34,6 @@ ggplot(frequency, aes(Mueller, Watergate)) +
   geom_abline(color = "red") +
   hrbrthemes::theme_ipsum_rc() +
   labs(title = "Word frequencies in Mueller vs. Watergate Reports",
-       subtitle = "Text from Mueller Report (2019), Watergate Special Prosuection Force Report (1975)",
+       subtitle = "Text from Mueller Report (2019), Watergate Special Prosecution Force Report (1975)",
        caption = "by @dataandme")
 
