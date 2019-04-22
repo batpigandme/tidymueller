@@ -81,7 +81,8 @@ raw_frequency <- tidy_reports %>%
 frequency <- raw_frequency %>%
   select(report, word, freq) %>%
   spread(report, freq) %>%
-  arrange(Mueller, Watergate)
+  arrange(Mueller, Watergate) %>%
+  filter(word != "sessions")
 
 
 # plot relative frequencies -----------------------------------------------
